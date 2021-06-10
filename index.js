@@ -114,7 +114,7 @@ function getReviewByIndex(array, index) {
   return `${arr.name} gave the restaurant a ${arr.rating} star review, and their feedback was: ${arr.feedback}`
 }
 getReviewByIndex(reviews, 0)
-
+/*cant believe i even got this to work. Last time i thought it was impossible, as i had broken codegrade beyond repair. Now im on a roll!*/
 
   
 
@@ -130,10 +130,11 @@ Use the getLastReview function below to do the following:
 */
 
 
-function getLastReview(/*Your code here*/) {
-  /*Your code here*/
+function getLastReview(array) {
+  let arr = array[array.length -1];
+  return `${arr.name} gave the restaurant a ${arr.rating} star review, and their feedback was: ${arr.feedback}`
 } 
-
+getLastReview(reviews);
 
 
 ///////////////🍔☕️🍽 STRETCH🍔☕️🍽////////////////////
